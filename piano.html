@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="pianostyle.css">
+</head>
+
+<body>
+  <p class='title'>Piano Player</p>
+  <p id='demo'>Follow the song below to play  the piano.</p>
+
+  <!-- 🎹 Piano Keys -->
+  <section class="piano">
+    <section id='c-key' class="key" data-note="C">
+      <section class='keynote'>C</section>
+    </section>
+    <section id='c-sharp-key' class="black-key" data-note="C#">
+      <section class='black-keynote'>C#</section>
+    </section>
+    <section id='d-key' class="key" data-note="D">
+      <section class='keynote'>D</section>
+    </section>
+    <section id='d-sharp-key' class="black-key" data-note="D#">
+      <section class='black-keynote'>D#</section>
+    </section>
+    <section id='e-key' class="key" data-note="E">
+      <section class='keynote'>E</section>
+    </section>
+    <section id='f-key' class="key" data-note="F">
+      <section class='keynote'>F</section>
+    </section>
+    <section id='f-sharp-key' class="black-key" data-note="F#">
+      <section class='black-keynote'>F#</section>
+    </section>
+    <section id='g-key' class="key" data-note="G">
+      <section class='keynote'>G</section>
+    </section>
+    <section id='g-sharp-key' class="black-key" data-note="G#">
+      <section class='black-keynote'>G#</section>
+    </section>
+    <section id='a-key' class="key" data-note="A">
+      <section class='keynote'>A</section>
+    </section>
+    <section id='a-sharp-key' class="black-key" data-note="A#">
+      <section class='black-keynote'>A#</section>
+    </section>
+    <section id='b-key' class="key" data-note="B">
+      <section class='keynote'>B</section>
+    </section>
+    <section id='high-c-key' class="key" data-note="highC">
+      <div class='keynote'>C</div>
+    </section>
+  </section>
+
+  <!-- 🎵 Lyrics -->
+  <section id='lyrics'>
+    <section id='column-one'>
+      <section id="word-one">HAP-</section>
+      <section id="letter-note-one">G</section>
+    </section>
+    <section id='column-two'>
+      <section id="word-two">PY</section>
+      <section id="letter-note-two">G</section>
+    </section>
+    <section id='column-three'>
+      <section id="word-three">BIRTH-</section>
+      <section id="letter-note-three">A</section>
+    </section>
+    <section id='column-four'>
+      <section id="word-four">DAY</section>
+      <section id="letter-note-four">G</section>
+    </section>
+    <section id='column-five'>
+      <section id="word-five">TO</section>
+      <section id="letter-note-five">C</section>
+    </section>
+    <section id='column-six'>
+      <section id="word-six">YOU</section>
+      <section id="letter-note-six">B</section>
+    </section>
+    <section id='column-optional' class='column-optional'>
+      <section id="word-optional">END</section>
+      <section id="letter-note-optional">A</section>
+    </section>
+
+    <button id="first-next-line">Line 2</button>
+    <button id="second-next-line">Line3</button>
+    <button id="third-next-line">Line 4</button>
+    <button id="fourth-next-line">Reset</button>
+  </section>
+
+  <!-- 🎶 Hidden audio bank -->
+  <div class="audio-bank" aria-hidden="true" hidden>
+    <audio data-note="C" src="sounds/C.mp3"></audio>
+    <audio data-note="C#" src="sounds/Cs.mp3"></audio>
+    <audio data-note="D" src="sounds/D.mp3"></audio>
+    <audio data-note="D#" src="sounds/Ds.mp3"></audio>
+    <audio data-note="E" src="sounds/E.mp3"></audio>
+    <audio data-note="F" src="sounds/F.mp3"></audio>
+    <audio data-note="F#" src="sounds/Fs.mp3"></audio>
+    <audio data-note="G" src="sounds/G.mp3"></audio>
+    <audio data-note="G#" src="sounds/Gs.mp3"></audio>
+    <audio data-note="A" src="sounds/A.mp3"></audio>
+    <audio data-note="A#" src="sounds/As.mp3"></audio>
+    <audio data-note="B" src="sounds/B.mp3"></audio>
+    <audio data-note="highC" src="sounds/highC.mp3"></audio>
+  </div>
+
+  <script src="piano.js"></script>
+
+</body>
+</html>
